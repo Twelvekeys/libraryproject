@@ -1,0 +1,127 @@
+
+.grid-container {
+    display:grid;
+    gap: 1rem;
+    min-width: 1fr;
+    grid-template-columns: repeat(3,1fr);
+   
+}
+
+.card {
+    border-radius: 6px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    border-color: black;
+    border: 1px solid;
+    width: 13rem;
+    height: 10rem;
+}
+
+    
+    
+
+.title, .author  {
+    margin: 5px 5px;
+    font-size: 1em;
+    
+}
+.page {
+    margin: 2px 2px;
+    font-size: .6em;
+}
+.card-footer {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+.header {
+
+    align-self: bottom ;
+    justify-self: center;
+    font-size: 24px;
+    position:fixed;
+    font-weight: bolder;
+    top: 0%;
+    left:50%;
+    margin-right: -50%;
+   transform: translate(-50%, -50%);
+}
+.body {
+    font-size: 24px;
+}
+
+.addbtn {
+font-size: 14px;
+
+}
+.entry {
+    font-size: 14px;
+    height: 1rem;
+    width: 12rem;
+
+}
+form {
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgb(214, 206, 206);
+    height: 9rem;
+    gap: 8px;
+    width:16rem;
+    display: flex;
+    flex-direction: column;
+    border:2px solid;
+    font-size: 12px;
+    border-color:darkslategrey;
+}
+
+
+
+.radiob {
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+}
+.popup {
+    visibility: hidden ;
+    position:fixed;
+    top: 50%;
+    left:50%;
+    margin-right: -50%;
+   transform: translate(-50%, -50%) scale(0.1);
+   transition: transform .4s;
+}
+.open-popup {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    
+}
+
+ 
+input:invalid {
+    background-color: ivory;
+    border: none;
+    outline: 2px solid red;
+    border-radius: 5px;
+}
+
+button {
+    border-radius: 5px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

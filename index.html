@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Read</title>
+</head>
+
+</div>
+<body>
+    <form onsubmit="return false"  class="popup" id="popup">
+        <input type="text" name="title" id="titlein" placeholder="Title" class="entry" required>
+        <input type="text" name="author" id="authorin" placeholder="Author" class="entry" required>
+        <input type="number"  name="pages" id="pagesin" placeholder="Pages" class="entry" required>
+        <div class="radiob"> 
+        <div>Read:<input type="radio" name="read" class="radio" id="readin" value="Read" required></div>
+        <div>Unread:<input type="radio" name="read" class="radio" id="unread" value="Unread" required></div>
+    </div>
+    <div class="btncont">
+    <input type="submit" name="submit" onclick="hidePopup()" value="Cancel" class="create">
+    <input type="submit" name="submit" id="createbtn" onclick="popupBox()" value="Create" class="create">
+    </div>
+    </form>
+    <div class="books">
+        <p class="header">Library <button class="addbtn" onclick="showPopup()">+ Add</button></p>
+        
+    <div id="library" class="grid-container">
+    
+
+    
+</div>
+    <script  src="script.js"> </script>
+</body>
+</html>
